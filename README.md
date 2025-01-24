@@ -1,8 +1,16 @@
-# tradeagents
+TradeAgents is an open-source framework for creating intelligent agents that simulate complex market dynamics. 
 
-## Overview
+It combines economic principles with modern AI tools, enabling users to model decision-making, optimize outcomes, and explore market behaviors.
 
-This project provides agent framework for creating tradeagents with economic incentive. The agents have utilities for parallel AI inference and prompt caching using large language models (LLMs).
+Key features include:
+
+- Dynamic Market Simulations: Build and test agents in realistic market environments.
+- AI Integration: Use large language models for parallel inference and adaptive decision-making.
+- Customizable Memory System: Manage agent knowledge bases with a scalable and intuitive database layer.
+- Modular Design: Easily extend, test, and deploy simulations with built-in tools and mock dependencies.
+
+
+TradeAgents is perfect for developers, researchers, and enthusiasts looking to experiment with intelligent agent systems in competitive settings.
 
 <p align="center">
   <img src="assets/tradeagents.jpeg" alt="Image Alt Text" width="80%" height="80%">
