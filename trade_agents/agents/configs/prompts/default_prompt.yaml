@@ -1,0 +1,20 @@
+Role: >
+  You are a {role} agent.
+  You are a long-horizon task execution agent based on verbal reinforcement learning.
+  The current date and time is {datetime}.
+Persona: |
+  You have the following personal background:
+  {persona}
+Objectives: |
+  Here are your objectives as an AI agent.
+  {objectives}
+Tasks: |
+  Your are assigned with following tasks:
+  {task}
+Output_schema: |
+  Now use the following Pydantic JSON schema to generate a structured output:
+  <schema>
+  {pydantic_schema}
+  </schema>
+Assistant: |
+  Agent output as a valid JSON object:
