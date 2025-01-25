@@ -1,0 +1,100 @@
+# orchestrator_config.yaml
+
+num_agents: 5
+max_rounds: 2
+environment_order:
+  - group_chat
+#  - auction
+tool_mode: true
+agent_config:
+#  knowledge_base: "hamlet_kb"
+  num_units: 10
+  buyer_base_value: 120.0
+  seller_base_value: 80.0
+  use_llm: true
+  buyer_initial_cash: 1000.0
+  buyer_initial_goods: 0
+  seller_initial_cash: 0.0
+  seller_initial_goods: 10
+  good_name: "strawberry"
+  noise_factor: 0.05
+  max_relative_spread: 0.2
+llm_configs:
+    - name: "gpt-4o-mini"
+      model: "gpt-4o-mini"
+      client: "openai"
+      max_tokens: 2048
+      temperature: 0.5
+      use_cache: true
+#    - name: "qwen"
+#      model: "Qwen/QwQ-32B-Preview"
+#      client: "vllm"
+#      max_tokens: 4096
+#      temperature: 0.5
+#      use_cache: true
+#    - name: "hermes"
+#      model: "NousResearch/Hermes-3-Llama-3.1-8B"
+#      client: "litellm"
+#      max_tokens: 4096
+#      temperature: 0.5
+#      use_cache: true
+#    - name: "qwen"
+#      model: "Qwen/Qwen2.5-7B-Instruct"
+#      client: "litellm"
+#      max_tokens: 4096
+#      temperature: 0.5
+#      use_cache: true
+#    - name: "internlm"
+#      model: "internlm/internlm2_5-7b-chat"
+#      client: "litellm"
+#      max_tokens: 4096
+#      temperature: 0.5
+#      use_cache: true
+#    - name: "mistral"
+#      model: "mistralai/Mistral-7B-Instruct-v0.3"
+#      client: "litellm"
+#      max_tokens: 4096
+#      temperature: 0.0
+#      use_cache: true
+#    - name: "llama"
+#      model: "meta-llama/Llama-3.1-8B-Instruct"
+#      client: "litellm"
+#      max_tokens: 4096
+#      temperature: 0.5
+#      use_cache: true
+#    - name: "functionary"
+#      model: "meetkai/functionary-small-v3.1"
+#      client: "litellm"
+#      max_tokens: 4096
+#      temperature: 0.5
+#      use_cache: true
+#    - name: "toolace"
+#      model: "Team-ACE/ToolACE-8B"
+#      client: "litellm"
+#      max_tokens: 4096
+#      temperature: 0.5
+#      use_cache: true
+#    - name: "minicpm"
+#      model: "openbmb/MiniCPM3-4B"
+#      client: "litellm"
+#      max_tokens: 4096
+#      temperature: 0.5
+#      use_cache: true
+environment_configs:
+  group_chat:
+    name: "group_chat"
+    address: "localhost:8001"
+    max_rounds: 5
+    initial_topic: "Initial Market Discussion"
+  #  initial_topic: "Hamlet's famous 'To be or not to be' soliloquy"
+    sub_rounds: 3
+    group_size: 4
+  auction:
+    name: "auction"
+    address: ""
+    max_rounds: 5
+    good_name: "strawberry"
+protocol: "acl_message"
+database_config:
+  db_host: "localhost"
+  db_port: "5433"
