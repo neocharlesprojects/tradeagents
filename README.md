@@ -13,7 +13,7 @@ Key features include:
 TradeAgents is perfect for developers, researchers, and enthusiasts looking to experiment with intelligent agent systems in competitive settings.
 
 <p align="center">
-  <img src="assets/tradeagents.png" alt="Image Alt Text" width="80%" height="80%">
+  <img src="assets/tradeagents.jpg" alt="Image Alt Text" width="80%" height="80%">
 </p>
 
 ## Installation
