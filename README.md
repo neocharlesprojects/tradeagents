@@ -15,10 +15,6 @@ TradeAgents is an open-source framework for creating intelligent agents that sim
 
 TradeAgents is perfect for developers, researchers, and enthusiasts looking to experiment with intelligent agent systems in competitive settings.
 
-<p align="center">
-  <img src="assets/tradeagents.jpg" alt="TradeAgents Simulation" width="80%" height="80%">
-</p>
-
 ---
 
 ## Installation
@@ -198,7 +194,7 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 
 ## Contact
 
-For issues and discussions, open a GitHub issue or contact the maintainers at [GitHub Issues](https://github.com/tradeagents-ai/TradeAgents/issues).
+For issues and discussions, open a GitHub issue [GitHub Issues](https://github.com/tradeagents-ai/TradeAgents/issues) or contact me at neocharlesprojects@gmail.com .
 
 Happy trading!
 
