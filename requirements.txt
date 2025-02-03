@@ -1,14 +1,27 @@
+# TradeAgents Dependencies
+# Organized for readability and maintainability
+
+# Core Libraries
 pydantic==2.8.2
 pydantic-settings==2.5.2
+
+# Database & ORM
 psycopg2==2.9.10
+
+# AI & LLM Integrations
 anthropic==0.34.1
 openai==1.42.0
-python-dotenv==1.0.1
-colorama==0.4.6
-names==0.3.0
 tiktoken==0.7.0
-fastapi==0.115.6
+
+# Environment & Config Management
+python-dotenv==1.0.1
+
+# CLI & Formatting Tools
+colorama==0.4.6
 pyfiglet==1.0.2
-uvicorn==0.34.0
 rich==13.9.4
+
+# Web Framework & Server
+fastapi==0.115.6
+uvicorn==0.34.0
 aiohttp
